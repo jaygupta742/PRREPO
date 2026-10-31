@@ -6,4 +6,5 @@ jobs:
         steps:
           - run: echo "hello my first workflow"
           - run: date
-          - run : ls
+          - run: actions/checkout@v4
+          - run : ls -la
