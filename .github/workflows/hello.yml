@@ -4,7 +4,7 @@ jobs:
   greet:
         runs-on: ubuntu-latest
         steps:
+          - uses: actions/checkout@v4
           - run: echo "hello my first workflow"
           - run: date
-          - run: actions/checkout@v4
           - run : ls -la
